@@ -16,9 +16,9 @@ class CategoriesTableSeeder extends Seeder
     {
         // カテゴリを挿入するデータを定義
         $categories = [
-            ['content' => 'カテゴリ1'],
-            ['content' => 'カテゴリ2'],
-            ['content' => 'カテゴリ3'],
+            ['content' => '商品の交換について'],
+            ['content' => '返品について'],
+            ['content' => '破損商品について'],
         ];
 
         // テーブルにデータを挿入

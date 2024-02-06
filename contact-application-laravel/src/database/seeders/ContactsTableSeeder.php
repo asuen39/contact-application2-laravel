@@ -14,24 +14,26 @@ class ContactsTableSeeder extends Seeder
      */
     public function run()
     {
-        // データの挿入
-        DB::table('contacts')->insert([
-            'category_id' => 1,
-            'first_name' => 'John',
-            'last_name' => 'Doe',
-            'gender' => 1,
-            'email' => 'john@example.com',
-            'tell' => '123-456-7890',
-            'address' => '123 Main Street',
-            'building' => 'Apt 101',
-            'detail' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'created_at' => now(),
-            'updated_at' => now(),
-        ]);
+        // category_idの初期値
+        $categoryId = 1;
 
-        // 他のデータの挿入
-        DB::table('contacts')->insert([
-            // 他のデータをここに追加
-        ]);
+        // データの挿入
+        for ($i = 0; $i < 10; $i++) {
+            DB::table('contacts')->insert([
+                'category_id' => $categoryId,
+                'first_name' => '山田',
+                'last_name' => '太郎',
+                'gender' => 1,
+                'email' => 'test@example.com',
+                'tell' => '123-456-7890',
+                'address' => '東京都大田区蒲田1-2-3',
+                'building' => '蒲田マンション101',
+                'detail' => '届いた商品が注文した内容ではありませんでした。商品の交換をお願いします。',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+            // category_idを増やす
+            $categoryId++;
+        };
     }
 }
