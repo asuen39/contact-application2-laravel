@@ -1,0 +1,26 @@
+/* header.css */
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    border-bottom: 1px solid #dfdfde;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    color: #8b7969;
+    margin: auto;
+    font-size: 30px;
+}
+
+.header-nav__link {
+    text-decoration: none;
+}
