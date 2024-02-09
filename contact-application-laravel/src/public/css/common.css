@@ -13,6 +13,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .header__logo {
@@ -33,6 +35,15 @@
 
 .header__nav-item a {
     display: block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    color: #e1d5c8;
+}
+
+.header__nav-item .form button {
+    width: 120px;
+    text-align: center;
     padding: 5px 10px;
     border: 1px solid #ddd;
     background-color: #f6f6f6;
