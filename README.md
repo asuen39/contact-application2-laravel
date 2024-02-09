@@ -5,6 +5,11 @@
 - docker-compose up -d --build
 - ※Mysqlは環境によって起動しない場合があります。それぞれの環境に合わせてdocker-compose.ymlの編集を行ってください。
 - ※osによってファイルの権限の指定する可能性があります。sudo chmod -R 777 * 等環境に合わせて指定してください。
+- ※docker-compose絡みで解消出来ないエラーが発生した時 以下実行で解決出来ます。
+- コンテナの停止
+- コンテナの削除 (docker/mysql/dataディレクトリの削除)
+- PC再起動後にdocker-compose build --no-cache
+- docker-compose up -d
 
 ### laravel環境構築
 - docker-compose exec php bash
