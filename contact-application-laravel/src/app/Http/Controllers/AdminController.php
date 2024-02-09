@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $contacts = Contacts::with('category')->paginate(10);
+        $contacts = Contacts::with('category')->paginate(7);
         $categories = Category::all(); // カテゴリー情報を取得
         return view('index', ['contacts' => $contacts, 'categories' => $categories]);
     }
