@@ -1,7 +1,7 @@
 # お問い合わせフォーム
 
 ## 環境構築
-- [git clone リンク](git@github.com:asuen39/contact-application2-laravel.git)</a>
+- git clone リンク: git@github.com:asuen39/contact-application2-laravel.git</a>
 - docker-compose up -d --build
 - ※Mysqlは環境によって起動しない場合があります。それぞれの環境に合わせてdocker-compose.ymlの編集を行ってください。
 - ※osによってファイルの権限の指定する可能性があります。sudo chmod -R 777 * 等環境に合わせて指定してください。
