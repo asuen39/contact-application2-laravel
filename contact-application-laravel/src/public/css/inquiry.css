@@ -1,0 +1,130 @@
+.inquiry__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.section__title {
+    padding: 20px 0;
+    text-align: center;
+    color: #8b7969;
+    font-size: 30px;
+}
+
+.inquiry__form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form__group-title {
+    width: 35%;
+}
+
+.form__group-content {
+    width: 65%;
+}
+
+.form__label--required {
+    padding: 2px;
+    color: #ff0000;
+}
+
+.form__error {
+    color: #ff0000;
+    text-align: left;
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+    appearance: none;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.name_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_group input {
+    width: 45%;
+}
+
+.form__radio--text .radio_round {
+    display: inline-block;
+    padding-left: 32px;
+    padding-top: 4px;
+    position: relative;
+    margin-right: 12px;
+}
+
+.radio_round::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+}
+
+.form__radio--text input[type=radio]:checked+.radio_round::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #8B7969;
+    border-radius: 50%;
+}
+
+.form__input--text .form__tell {
+    width: 31%;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.category__group {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f4f4f4;
+}
+
+.form__button {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 25%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #827562;
+    color: #fff;
+    cursor: pointer;
+}

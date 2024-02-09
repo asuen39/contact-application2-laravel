@@ -10,6 +10,7 @@ class Contacts extends Model
     use HasFactory;
 
     protected $table = 'contacts';
+    protected $fillable = ['first_name', 'last_name', 'gender', 'email', 'tell', 'address', 'building', 'detail', 'category_id'];
 
     public function category()
     {

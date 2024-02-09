@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Contacts;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,5 +18,7 @@ class DatabaseSeeder extends Seeder
             CategoriesTableSeeder::class,
             ContactsTableSeeder::class,
         ]);
+
+        Contacts::factory()->count(35)->create();
     }
 }

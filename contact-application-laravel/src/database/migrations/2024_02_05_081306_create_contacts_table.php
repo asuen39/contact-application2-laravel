@@ -32,9 +32,9 @@ class CreateContactsTable extends Migration
             /*カラム名:address, 型:varchar(255), NOT NULL:〇 */
             $table->string('address', 255)->nullable(false);
             /*カラム名:building, 型:varchar(255) */
-            $table->string('building', 255);
+            $table->string('building', 255)->nullable()->default(null);
             /*カラム名:detail, 型:text, NOT NULL:〇 */
-            $table->text('detail')->nullable(false);
+            $table->text('detail')->nullable();
             /*カラム名:created_at, 型:timestamp */
             $table->timestamp('created_at')->useCurrent()->nullable();
             /*カラム名:updated_at, 型:timestamp */

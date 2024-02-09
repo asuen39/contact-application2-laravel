@@ -41,7 +41,7 @@ class AdminController extends Controller
             $query->whereDate('created_at', $date);
         }
 
-        $searchResults = $query->get();
+        $searchResults = $query->paginate(10);
         $categories = Category::all(); // カテゴリー情報を再度取得
 
         return view('index', ['contacts' => $searchResults, 'categories' => $categories]);
