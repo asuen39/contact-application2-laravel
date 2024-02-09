@@ -1,0 +1,51 @@
+/* header.css */
+.header {
+    background: #fff;
+}
+
+.header__inner {
+    border-bottom: 1px solid #dfdfde;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.header__utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header__logo {
+    color: #8b7969;
+    margin: auto;
+    font-size: 30px;
+}
+
+.header__nav {
+    position: relative;
+}
+
+.header__nav-item {
+    position: absolute;
+    right: 0;
+    top: -15px;
+}
+
+.header__nav-item a {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    color: #e1d5c8;
+}
+
+.header__nav-item .form button {
+    width: 120px;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    color: #e1d5c8;
+}
