@@ -13,13 +13,26 @@
 <body>
     <header class="header">
         <div class="header__inner">
-            <div class="header-utilities">
-                <h1 class="header-logo">FashionablyLate</h1>
+            <div class="header__utilities">
+                <h1 class="header__logo">FashionablyLate</h1>
                 <nav>
-                    <ul class="header-nav">
-                        <li class="header-nav__item">
-                            <a class="header-nav__link" href="/categories">ログアウト</a>
+                    <ul class="header__nav">
+                        @if (Auth::check())
+                        <li class="header__nav-item">
+                            <form class="form" action="{{ route('logout') }}" method="post">
+                                @csrf
+                                <button type="submit" class="header__nav__button">ログアウト</button>
+                            </form>
                         </li>
+                        @elseif (Request::is('register'))
+                        <li class="header__nav-item">
+                            <a href="{{ route('login') }}" class="header__nav__button">Login</a>
+                        </li>
+                        @elseif (Request::is('login'))
+                        <li class="header__nav-item">
+                            <a href="{{ route('register') }}" class="header__nav__button">Register</a>
+                        </li>
+                        @endif
                     </ul>
                 </nav>
             </div>

@@ -1,0 +1,30 @@
+.thanks__content {
+    margin: 320px auto 0px;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.thanks__heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.thanks__heading h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #827562;
+}
+
+.thanks__home {
+    text-align: center;
+}
+
+.thanks__home a {
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #827562;
+    background-color: #827562;
+    color: #fff;
+}
